@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Meri Jaan ❤️</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+ margin:0;
+ background:#10070d;
+ color:#fff0f5;
+ font-family:Georgia,serif;
+ text-align:center;
+}
+
+input[type=radio]{
+ display:none;
+}
+
+.pages{
+ min-height:100vh;
+}
+
+.page{
+ display:none;
+ min-height:100vh;
+ padding:35px 18px;
+ align-items:center;
+ justify-content:center;
+ background:
+ radial-gradient(circle at top,#55203c,transparent 55%),
+ linear-gradient(145deg,#10070d,#260d1c);
+}
+
+#s1:checked ~ .pages #p1,
+#s2:checked ~ .pages #p2,
+#s3:checked ~ .pages #p3,
+#s4:checked ~ .pages #p4,
+#s5:checked ~ .pages #p5,
+#s6:checked ~ .pages #p6,
+#s7:checked ~ .pages #p7{
+ display:flex;
+ animation:appear .6s ease;
+}
+
+.content{
+ max-width:650px;
+ width:100%;
+ margin:auto;
+}
+
+@keyframes appear{
+ from{opacity:0;transform:translateY(18px)}
+ to{opacity:1;transform:translateY(0)}
+}
+
+h1{
+ font-size:clamp(40px,10vw,65px);
+ color:#ff9fbd;
+ line-height:1.15;
+}
+
+h2{
+ color:#ff9fbd;
+ font-size:clamp(28px,7vw,38px);
+}
+
+p{
+ font-size:17px;
+ line-height:1.85;
+ color:#f7dce7;
+}
+
+.small{
+ letter-spacing:4px;
+ color:#ff9fbd;
+ font-size:12px;
+}
+
+.heart{
+ font-size:70px;
+ color:#ff739e;
+ animation:beat 1.5s infinite;
+}
+
+@keyframes beat{
+ 50%{transform:scale(1.18)}
+}
+
+.card{
+ background:#ffffff0c;
+ border:1px solid #ff9fbd55;
+ border-radius:22px;
+ padding:25px;
+ margin:22px 0;
+ box-shadow:0 15px 40px #0005;
+}
+
+.btn{
+ display:inline-block;
+ background:linear-gradient(120deg,#ff527f,#b62962);
+ color:white;
+ padding:14px 24px;
+ margin:9px 5px;
+ border-radius:30px;
+ text-decoration:none;
+ font-size:15px;
+ border:1px solid #ffb1c9;
+ cursor:pointer;
+}
+
+.btn.back{
+ background:#ffffff12;
+ border:1px solid #ffffff55;
+}
+
+.grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:12px;
+}
+
+.reason{
+ background:#ffffff0d;
+ padding:18px;
+ border:1px solid #ff9fbd44;
+ border-radius:16px;
+ line-height:1.6;
+}
+
+.reason span{
+ display:block;
+ color:#ff9fbd;
+ font-size:25px;
+ margin-bottom:8px;
+}
+
+.flowers{
+ font-size:38px;
+ margin:15px 0;
+}
+
+.letter{
+ text-align:left;
+ white-space:pre-line;
+ line-height:1.9;
+ font-size:16px;
+}
+
+footer{
+ margin-top:25px;
+ font-size:12px;
+ color:#d49bad;
+}
+
+@media(max-width:380px){
+ .grid{grid-template-columns:1fr}
+ .card{padding:19px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE SELECTORS -->
+<input type="radio" name="slide" id="s1" checked>
+<input type="radio" name="slide" id="s2">
+<input type="radio" name="slide" id="s3">
+<input type="radio" name="slide" id="s4">
+<input type="radio" name="slide" id="s5">
+<input type="radio" name="slide" id="s6">
+<input type="radio" name="slide" id="s7">
+
+<div class="pages">
+
+<!-- PAGE 1 -->
+<section class="page" id="p1">
+<div class="content">
+
+<div class="small">A SPECIAL SURPRISE FOR YOU</div>
+<div class="heart">♡</div>
+
+<h1>Happy Birthday<br>Meri Jaan ❤️</h1>
+
+<div class="card">
+<p>Today is not an ordinary day.</p>
+<p>Today is the day someone very special came into this world.</p>
+<p>And I have prepared a little surprise for you.</p>
+</div>
+
+<label for="s2" class="btn">Open Your Surprise ❤️</label>
+
+<footer>November 3 · Made with love</footer>
+</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="p2">
+<div class="content">
+
+<div class="small">PAGE TWO</div>
+<h2>Today Is All About You 🌷</h2>
+
+<div class="card">
+<div class="flowers">🌸 🌷 🌹</div>
+
+<p>May your birthday be filled with happiness, laughter and beautiful memories.</p>
+
+<p>May every dream you have come closer to reality.</p>
+
+<p>May you always find reasons to smile, even on ordinary days.</p>
+
+<div class="flowers">🌺 🌻 🌸</div>
+</div>
+
+<label for="s1" class="btn back">← Back</label>
+<label for="s3" class="btn">Next Surprise →</label>
+</div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="p3">
+<div class="content">
+
+<div class="small">PAGE THREE</div>
+<h2>Things That Make You Special ❤️</h2>
+
+<div class="grid">
+<div class="reason">
+<span>01</span>
+Your beautiful smile.
+</div>
+
+<div class="reason">
+<span>02</span>
+Your lovely personality.
+</div>
+
+<div class="reason">
+<span>03</span>
+Your kindness.
+</div>
+
+<div class="reason">
+<span>04</span>
+Your way of making moments special.
+</div>
+
+<div class="reason">
+<span>05</span>
+Your beautiful dreams.
+</div>
+
+<div class="reason">
+<span>06</span>
+Simply being yourself.
+</div>
+</div>
+
+<div class="card">
+<p>There are so many little things that make you special. These are just six of them.</p>
+</div>
+
+<label for="s2" class="btn back">← Back</label>
+<label for="s4" class="btn">Continue →</label>
+</div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="p4">
+<div class="content">
+
+<div class="small">PAGE FOUR</div>
+<h2>A Garden Made For You 🌹</h2>
+
+<div class="card">
+<div class="flowers">🌷 🌸 🌺</div>
+<p>A flower for your happiness.</p>
+<p>A flower for your success.</p>
+<p>A flower for your dreams.</p>
+<p>A flower for your beautiful future.</p>
+<div class="flowers">🌻 🌹 🌷</div>
+</div>
+
+<h2>Keep Blooming ✨</h2>
+
+<label for="s3" class="btn back">← Back</label>
+<label for="s5" class="btn">Next Page →</label>
+</div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page" id="p5">
+<div class="content">
+
+<div class="small">PAGE FIVE</div>
+<h2>A Little Reminder 💗</h2>
+
+<div class="card">
+<div class="heart">♡</div>
+
+<p>Always believe in yourself.</p>
+
+<p>Your dreams are important. Your happiness is important. And you deserve to feel proud of the person you are becoming.</p>
+
+<p>Never stop learning, growing and smiling.</p>
+</div>
+
+<label for="s4" class="btn back">← Back</label>
+<label for="s6" class="btn">Open Your Letter 💌</label>
+</div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page" id="p6">
+<div class="content">
+
+<div class="small">PAGE SIX · A LETTER</div>
+<h2>For My Meri Jaan ❤️</h2>
+
+<div class="card letter">
+
+Meri Jaan,
+
+HAPPY BIRTHDAY! ❤️
+
+First of all, I wish you the happiest birthday. I hope today brings a smile to your face and gives you memories that you will always remember.
+
+I wanted to make something different for your birthday, something that you could open and enjoy. So here is this little website, made especially for your special day.
+
+I hope you always remain happy. I hope you achieve every goal you have planned for yourself. I hope your hard work brings you success and your future is filled with beautiful opportunities.
+
+Thank you for all the little moments, conversations, smiles and memories. Sometimes the smallest moments become the most meaningful ones.
+
+Always remember that you are enough. You don't need to compare yourself with anyone. Keep believing in yourself and never give up on your dreams.
+
+I wish you peaceful mornings, happy evenings, exciting adventures and countless reasons to smile.
+
+May every new year of your life bring you more confidence, more happiness and more beautiful experiences.
+
+If I could give you one gift beyond everything else, it would be a lifetime full of happiness and beautiful memories.
+
+I hope this little surprise makes your birthday a little more special.
+
+HAPPY BIRTHDAY ONCE AGAIN, MERI JAAN! ❤️
+
+Stay blessed, keep smiling and always be yourself.
+
+With lots of love. ❤️
+
+</div>
+
+<label for="s5" class="btn back">← Back</label>
+<label for="s7" class="btn">Final Surprise ✨</label>
+</div>
+</section>
+
+<!-- PAGE 7 -->
+<section class="page" id="p7">
+<div class="content">
+
+<div class="small">THE FINAL PAGE</div>
+
+<div class="heart">❤️</div>
+
+<h1>Keep Shining,<br>Meri Jaan</h1>
+
+<div class="card">
+<div class="flowers">🎂 🌹 🎂</div>
+
+<h2>Happy Birthday!</h2>
+
+<p>May your life always be full of happiness, beautiful moments, success and endless smiles.</p>
+
+<p>Here's to a wonderful new chapter of your life.</p>
+
+<h2>❤️</h2>
+</div>
+
+<label for="s6" class="btn back">← Back</label>
+<label for="s1" class="btn">Start Again ↺</label>
+
+<footer>Made especially for you · November 3</footer>
+</div>
+</section>
+
+</div>
+</body>
+</html>
